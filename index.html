@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+
+    <!-- Google Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+      body * {
+        /* border: 1px solid yellowgreen; */
+      }
+    </style>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com "></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xl: '1440px',
+          },
+          extend: {
+            colors: {
+              violet: '#684bb1',
+              softMagenta: '#e882e8',
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/be951e1dbc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="flex items-center justify-center h-screen bg-[#f2f2f2]">
+      <!-- container -->
+      <div
+        class="bg-violet w-[375px] h-[800px] p-10 bg-[url('/images/bg-mobile.svg')] bg-no-repeat xl:flex xl:justify-between xl:w-[1440px] xl:bg-[url('/images/bg-desktop.svg')] xl:px-20 xl:pt-16"
+      >
+        <!-- desktop left -->
+        <div class="xl:w-[7 00px]">
+          <!-- Hero Image -->
+          <img src="./images/logo.svg" alt="" class="w-[120px] xl:w-[200px]" />
+          <img
+            src="./images/illustration-mockups.svg"
+            alt=""
+            class="mt-[70px] xl:mt-[76 px]"
+          />
+        </div>
+
+        <!-- desktop right -->
+        <div class="xl:w-[510px] xl:flex xl:flex-col xl:justify-between">
+          <!-- Main -->
+          <main class="mt-[60px] text-center xl:text-left xl:mt-[155px]">
+            <h2
+              class="text-white font-semibold font-['Poppins'] text-2xl leading-normal xl:text-[40px]"
+            >
+              Build The Community Your Fans Will Love
+            </h2>
+            <p class="mt-4 text-white leading-normal xl:text-lg xl:mt-6">
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <button
+              class="mt-5 bg-white rounded-full h-10 w-[200px] text-violet font-['Poppins'] text-xs shadow-[1px_3px_5px_rgba(0,0,0,0.27)] hover:bg-softMagenta hover:text-white hover:duration-200 xl:h-14 xl:text-lg xl:mt-6 xl:shadow-[2px_4px_9px_3px_rgba(0,0,0,0.26)]"
+            >
+              Register
+            </button>
+          </main>
+
+          <!-- Social Icons -->
+          <div
+            class="flex justify-center mt-16 text-white space-x-3 xl:justify-end"
+          >
+            <div
+              class="h-7 w-7 border rounded-full flex justify-center items-center text-sm hover:text-softMagenta hover:border-softMagenta hover:duration-200 xl:h-10 xl:w-10 xl:text-xl"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div
+              class="h-7 w-7 border rounded-full flex justify-center items-center text-sm hover:text-softMagenta hover:border-softMagenta hover:duration-200 xl:h-10 xl:w-10 xl:text-xl"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div
+              class="h-7 w-7 border rounded-full flex justify-center items-center text-sm hover:text-softMagenta hover:border-softMagenta hover:duration-200 xl:h-10 xl:w-10 xl:text-xl"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
